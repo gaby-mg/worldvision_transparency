@@ -35,7 +35,9 @@ function worldvision_transparency_views_default_views() {
   $handler->display->display_options['style_options']['navigation'] = 1;
   $handler->display->display_options['style_options']['indicators'] = 1;
   $handler->display->display_options['style_options']['pause'] = 1;
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_plugin'] = 'views_bootstrap_carousel_plugin_rows';
+  $handler->display->display_options['row_options']['image'] = 'field_imagen_destacada';
+  $handler->display->display_options['row_options']['description'] = '';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
