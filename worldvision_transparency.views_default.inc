@@ -31,7 +31,7 @@ function worldvision_transparency_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
-  $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_cycle';
+  $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_cycle2';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
     'class' => 'default',
@@ -56,6 +56,7 @@ function worldvision_transparency_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollLeft';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '5000';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '700';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['delay'] = '0';
@@ -66,6 +67,12 @@ function worldvision_transparency_views_default_views() {
   $handler->display->display_options['style_options']['views_slideshow_cycle']['wait_for_image_load_timeout'] = '3000';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartype'] = 0;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartypenobg'] = 0;
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['effect'] = 'carousel';
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['transition_advanced'] = 1;
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['timeout'] = '5000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['speed'] = '700';
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['delay'] = '0';
+  $handler->display->display_options['style_options']['views_slideshow_cycle2']['action_advanced'] = 1;
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Field: Imagen destacada */
   $handler->display->display_options['fields']['field_imagen_destacada']['id'] = 'field_imagen_destacada';
